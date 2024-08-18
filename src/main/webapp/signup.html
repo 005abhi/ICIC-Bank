@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ICICI Bank - Sign Up</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: #333;
+        margin-bottom: 2rem;
+    }
+
+    form {
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 300px;
+    }
+
+    label {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        display: block;
+        text-align: left;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"] {
+        font-size: 1.25rem;
+        padding: 0.5rem;
+        width: 100%;
+        margin-bottom: 1.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type="submit"] {
+        font-size: 1.5rem;
+        padding: 0.75rem 2rem;
+        color: #fff;
+        background-color: #28a745;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #218838;
+    }
+</style>
+</head>
+<body>
+
+    <h1>Sign Up</h1>
+    <form action="/ICICIBankApplication/signup" method="post">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname" required>
+        
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname" required>
+        
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+        
+        <label for="pwd">Password</label>
+        <input type="password" name="pwd" id="pwd" required>
+        
+        <label for="cpwd">Confirm Password</label>
+        <input type="password" name="cpwd" id="cpwd" required>
+        
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" id="phone" required>
+        
+        <label for="bal">Initial Balance</label>
+        <input type="number" name="bal" id="bal" min="2000" required>
+        
+        <input type="submit" value="Sign Up">
+    </form>
+
+</body>
+</html>
